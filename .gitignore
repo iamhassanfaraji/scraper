@@ -4,3 +4,4 @@ read.me
 .cache/puppeteer
 .gitingore
 test.html
+result/*
