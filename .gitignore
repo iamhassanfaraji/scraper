@@ -1,6 +1,6 @@
 node_modules
 test.js
-result
 read.me
 .cache/puppeteer
 .gitingore
+test.html
