@@ -1,17 +1,12 @@
 const puppeteer = require("puppeteer-core")
 const { join } = require("path")
 const fs = require("fs/promises")
-const {inspect} = require("util")
 
 const activeMenuQuery = ".base-layout-desktop-header-navigation_BaseLayoutDesktopHeaderNavigation__navGroup__bGWtA"
-const parentContainerQuery = ".base-layout-desktop-header-navigation_BaseLayoutDesktopHeaderNavigation__megaMenuContainer__ipIFg"
 const rightContainerQuery = ".BaseLayoutDesktopHeaderNavigationMainMegaMenu_BaseLayoutDesktopHeaderNavigationMainMegaMenu__mainCategoriesSection__QDkXq" // equal to level 1 parent Category container
-const activeMenuListQuery = ".d-flex .BaseLayoutDesktopHeaderNavigationMainMegaMenu_BaseLayoutDesktopHeaderNavigationMainMegaMenu__categoriesContentSectionItem__2MmGM"
-const subParentQuery = "."
-const lastChildQuery = "."
+const activeMenuListQuery = ".BaseLayoutDesktopHeaderNavigationMainMegaMenu_BaseLayoutDesktopHeaderNavigationMainMegaMenu__categoriesContentSection__iuiq7 .d-flex.BaseLayoutDesktopHeaderNavigationMainMegaMenu_BaseLayoutDesktopHeaderNavigationMainMegaMenu__categoriesContentSectionItem__2MmGM"
+
 const url = "https://www.digikala.com/"
-
-
 
 async function main() {
 
@@ -32,23 +27,28 @@ async function main() {
 
     const level1Categories = await page.$$(`${rightContainerQuery} a`)
 
+    const result = {}
+
     for (let item of level1Categories) {
         const nameFirstLevelCategory = await page.evaluate((el) => el.querySelector("p").textContent, item)
         await item.hover()
 
+        result[nameFirstLevelCategory] = []
+
         const menuListsDom = await page.$$(`${activeMenuListQuery} ul a`)
+
 
         const subCategories = []
 
         for (let menuListDom of menuListsDom) {
-            const classes = Object.values(await menuListDom.evaluate((el) => el.classList, menuListDom[i]))
+            const classes = Object.values(await menuListDom.evaluate((el) => el.classList, menuListDom))
             const getLastObject = subCategories.length - 1
 
             if (classes.find((value) => value == "text-body-2")) {
 
                 const valueCategory = await page.evaluate((el) => el.textContent, menuListDom)
                 const href = await page.evaluate((el) => el.href, menuListDom)
-                subCategories[getLastObject].level2.push({
+                subCategories[getLastObject].level3.push({
                     value: valueCategory,
                     href: href
                 })
@@ -65,12 +65,9 @@ async function main() {
                 console.error("pattern changed please update")
             }
         }
-        console.log(nameFirstLevelCategory)
-        console.log(inspect(subCategories, {depth: null}))
-        //await fs.writeFile("./test.html", menuListValues)
-
+        result[nameFirstLevelCategory] = subCategories
     }
-
+    await fs.writeFile("./result/category.json", JSON.stringify(result), "utf-8")
 }
 
 
