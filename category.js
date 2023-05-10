@@ -23,7 +23,6 @@ async function main() {
 
     const menuNodeObject = await page.$(activeMenuQuery)
     await menuNodeObject.hover()
-    const menuValues = await page.$(activeMenuQuery)
 
     const level1Categories = await page.$$(`${rightContainerQuery} a`)
 
