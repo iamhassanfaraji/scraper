@@ -41,7 +41,7 @@ async function main() {
                     name: await page.evaluate((el) => el.textContent, menuListDom),
                     href: await page.evaluate((el) => el.href, menuListDom)
                 },
-                LastLevel: []
+                lastLevel: []
             })
             
         } else if (classes.find((value) => value == "text-body-2")) {
