@@ -38,8 +38,9 @@ async function main() {
 
             categories.push({
                 firstLevel: {
-                    name: await page.evaluate((el) => el.textContent, menuListDom),
-                    href: await page.evaluate((el) => el.href, menuListDom)
+                    value: await page.evaluate((el) => el.textContent, menuListDom),
+                    href: await page.evaluate((el) => el.href, menuListDom),
+                    readStatus: false
                 },
                 lastLevel: []
             })
@@ -50,9 +51,14 @@ async function main() {
             const valueCategory = await page.evaluate((el) => el.textContent, menuListDom)
             const href = await page.evaluate((el) => el.href, menuListDom)
 
-            categories[getLastObject].LastLevel.push({
+            if(categories[getLastObject].readStatus){
+                delete categories[getLastObject].readStatus
+            }
+
+            categories[getLastObject].lastLevel.push({
                 value: valueCategory,
-                href: href
+                href: href,
+                readStatus: false
             })
 
         } else {
