@@ -1,6 +1,3 @@
 node_modules
-test.js
-read.me
-.cache/puppeteer
+.cache/
 .gitingore
-test.html
