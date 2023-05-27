@@ -1,0 +1,201 @@
+[
+    {
+        "firstLevel": {
+            "value": "لوازم جانبی گوشی",
+            "href": "https://www.digikala.com/search/category-mobile-accessories/"
+        },
+        "lastLevel": [
+            {
+                "value": "کیف و کاور گوشی",
+                "href": "https://www.digikala.com/search/category-cell-phone-pouch-cover/",
+                "readStatus": true
+            },
+            {
+                "value": "پاور بانک (شارژر همراه)",
+                "href": "https://www.digikala.com/search/category-power-bank/",
+                "readStatus": true
+            },
+            {
+                "value": "پایه نگهدارنده گوشی",
+                "href": "https://www.digikala.com/search/category-cell-phone-holder/",
+                "readStatus": true
+            }
+        ]
+    },
+    {
+        "firstLevel": {
+            "value": "گوشی موبایل",
+            "href": "https://www.digikala.com/search/category-mobile-phone/"
+        },
+        "lastLevel": [
+            {
+                "value": "اپل",
+                "href": "https://www.digikala.com/search/category-mobile-phone/apple/",
+                "readStatus": true
+            },
+            {
+                "value": "سامسونگ",
+                "href": "https://www.digikala.com/search/category-mobile-phone/samsung/",
+                "readStatus": true
+            },
+            {
+                "value": "شیائومی",
+                "href": "https://www.digikala.com/search/category-mobile-phone/xiaomi/",
+                "readStatus": true
+            },
+            {
+                "value": "نوکیا",
+                "href": "https://www.digikala.com/search/category-mobile-phone/product-list/?brands%5b0%5d=20",
+                "readStatus": true
+            }
+        ]
+    },
+    {
+        "firstLevel": {
+            "value": "مچ‌بند و ساعت هوشمند",
+            "href": "https://www.digikala.com/search/category-wearable-gadget/",
+            "readStatus": true
+        },
+        "lastLevel": []
+    },
+    {
+        "firstLevel": {
+            "value": "تلویزیون",
+            "href": "https://www.digikala.com/search/category-tv2/"
+        },
+        "lastLevel": [
+            {
+                "value": "جی پلاس",
+                "href": "https://www.digikala.com/search/category-tv2/?brands%5b0%5d=11349",
+                "readStatus": true
+            },
+            {
+                "value": "ایکس‌ویژن",
+                "href": "https://www.digikala.com/search/category-tv2/?brands%5b0%5d=59",
+                "readStatus": true
+            },
+            {
+                "value": "دوو",
+                "href": "https://www.digikala.com/search/category-tv2/?brands%5b0%5d=1603",
+                "readStatus": true
+            }
+        ]
+    },
+    {
+        "firstLevel": {
+            "value": "هدفون، هدست، هندزفری",
+            "href": "https://www.digikala.com/search/category-headphone-headset-microphone/",
+            "readStatus": true
+        },
+        "lastLevel": []
+    },
+    {
+        "firstLevel": {
+            "value": "اسپیکر بلوتوث و با سیم",
+            "href": "https://www.digikala.com/search/category-speaker/",
+            "readStatus": true
+        },
+        "lastLevel": []
+    },
+    {
+        "firstLevel": {
+            "value": "هارد، فلش و SSD",
+            "href": "https://www.digikala.com/search/category-data-storage/",
+            "readStatus": true
+        },
+        "lastLevel": []
+    },
+    {
+        "firstLevel": {
+            "value": "دوربین",
+            "href": "https://www.digikala.com/search/category-camera/"
+        },
+        "lastLevel": [
+            {
+                "value": "دوربین عکاسی دیجیتال",
+                "href": "https://www.digikala.com/search/category-digital-camera/",
+                "readStatus": true
+            },
+            {
+                "value": "دوربین‌ ورزشی و فیلم برداری",
+                "href": "https://www.digikala.com/search/category-camcorder/",
+                "readStatus": true
+            },
+            {
+                "value": "دوربین‌ چاپ سریع",
+                "href": "https://www.digikala.com/search/category-digital-camera/?q=%da%86%d8%a7%d9%be%20%d8%b3%d8%b1%db%8c%d8%b9&entry=mm",
+                "readStatus": true
+            }
+        ]
+    },
+    {
+        "firstLevel": {
+            "value": "پلی استیشن، ایکس باکس و بازی",
+            "href": "https://www.digikala.com/search/category-game-console/",
+            "readStatus": true
+        },
+        "lastLevel": []
+    },
+    {
+        "firstLevel": {
+            "value": "کامپیوتر و تجهیزات جانبی",
+            "href": "https://www.digikala.com/search/category-computer-parts/"
+        },
+        "lastLevel": [
+            {
+                "value": "تجهیزات مخصوص بازی",
+                "href": "https://www.digikala.com/search/category-gaming-accessories/",
+                "readStatus": true
+            },
+            {
+                "value": "مانیتور",
+                "href": "https://www.digikala.com/search/category-monitor/",
+                "readStatus": true
+            },
+            {
+                "value": "قطعات داخلی کامپیوتر",
+                "href": "https://www.digikala.com/search/category-computer-devices/",
+                "readStatus": true
+            },
+            {
+                "value": "ماوس",
+                "href": "https://www.digikala.com/search/category-mouse/",
+                "readStatus": true
+            }
+        ]
+    },
+    {
+        "firstLevel": {
+            "value": "لپ تاپ",
+            "href": "https://www.digikala.com/search/category-notebook-netbook-ultrabook/",
+            "readStatus": true
+        },
+        "lastLevel": []
+    },
+    {
+        "firstLevel": {
+            "value": "لوازم جانبی لپ تاپ",
+            "href": "https://www.digikala.com/search/category-laptop-accessories/"
+        },
+        "lastLevel": [
+            {
+                "value": "کیف، کوله و کاور",
+                "href": "https://www.digikala.com/search/category-laptop-bag/",
+                "readStatus": true
+            },
+            {
+                "value": "کابل‌ صدا، AUX و HDMI",
+                "href": "https://www.digikala.com/search/category-cable-voice-video/",
+                "readStatus": true
+            }
+        ]
+    },
+    {
+        "firstLevel": {
+            "value": "مودم و تجهیزات شبکه",
+            "href": "https://www.digikala.com/search/category-network/",
+            "readStatus": true
+        },
+        "lastLevel": []
+    }
+]
