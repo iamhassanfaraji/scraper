@@ -66,7 +66,7 @@ async function main() {
         }   
     }
 
-    await fs.writeFile("./result/category.json", JSON.stringify(categories), "utf-8")
+    await fs.writeFile("./result/categories.json", JSON.stringify(categories), "utf-8")
 }
 
 
