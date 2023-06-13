@@ -7,7 +7,7 @@ const filterProductsById = require("./filterProducts")
 const getAllCategoriesId = require("./categoriesId")
 const delNotAvailableSpecs = require("./delNotAvailable")
 
-fs.readFile("../result/products.json", { encoding: "utf-8" }, (err, data) => {
+fs.readFile(join(__dirname, "../result/products.json"), { encoding: "utf-8" }, (err, data) => {
     if (err) {
         console.log(err)
     } else {
